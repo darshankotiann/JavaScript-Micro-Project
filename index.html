@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>D.R.Y Challenge</title>
+</head>
+
+<body>
+
+    <div class="container-1">
+    <h2>Challenge 1:Your Age in Day</h2>
+    <div class="flex-box-container-1">
+    <div>
+        <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+    </div>
+
+    <div>
+        <button class="btn btn-danger" onclick="reset()">Reset</button>
+
+    </div>
+
+</div>
+<div class="flex-box-container-1">
+<div id="flex-box-result"></div>
+</div>
+</div>
+
+<div class="container-2">
+    <h2>Challenge 2: Cat Generator</h2>
+    <button class="btn btn-success"id="cat-generator" onclick="generatecat()">Cat Generator</button>
+    <div class="flex-box-container-2" id ="flex-cat-gen">
+
+    </div>
+    </div>
+    <div class="container-3">
+    <h2> Challenge 3: Rock, Paper, Scissor</h2>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id= "rock" src="static/image/rock.jpg" height="150" width="150"alt="" onclick="rpsGame(this)">
+        <img id= "paper" src="static/image/papper.png" height="150" width="150"alt=""onclick="rpsGame(this)">
+        <img id= "scissors" src="static/image/twofinger.png" height="150" width="150"alt=""onclick="rpsGame(this)">
+    
+    </div>
+    </div>
+    <div class="container-4">
+        <h2 id ="change-my-color"> Challenge 4:Change the color of Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+              <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+               <option value="random">Random</option>
+               <option value="red">Red</option>
+               <option value="green">Green</option>
+               <option value="reset">Reset</option>
+            </select>
+
+            </form>
+<button class="btn btn-primary">Wee!</button>
+<button class="btn btn-danger">Yahoo</button>
+<button class="btn btn-warning">Google</button>
+<button class="btn btn-success">Facebook</button>
+        </div>
+       <div class="container-5">
+           <h2>Challenge 5:Black Jack</h2>
+          <h3><span id="blackjack-result">Let's Play</span></h3>
+               <div class="flex-blackjack-row-1">
+                    <div id="your-box">
+                       <h2>You:<span id ="your-blackjack-result">0</span></h2>
+                     </div>
+<div id="dealer-box">
+    <h2>Dealer:<span id="dealer-blackjack-result">0</span></h2>
+</div>
+        </div>
+ 
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2"  id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger"  id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+        
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+  
+        <script src="home.js"></script>
+</body>
+
+</html>
